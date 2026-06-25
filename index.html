@@ -1,31 +1,80 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Webpage 1</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/jpg" href="kim.jpg">
-  </head>
-  <body>
-    <h1>Test Page</h1>
-    <p>Zindagi ka safar</p>
-    
-    <audio controls>
-      <source src="audio.mp3" type="audio/mp3">
-    </audio>
-    <p>Hello World!</p>
-    <form action="/login" method="post">
-      
-      <label for="username">Username:</label>
-      <input type="text" id="username" name="username" placeholder="Enter Username"><br>
-      
-      <label for="password">Password: </label>
-      <input type="password" id="password" name="password" placeholder="Enter Password"><br>
-      
-      <label for="date of birth"> DOB:       </label>
-      <input type="date" id="date of birth" name="date of birth" placeholder="Enter DOB"><br>
-      
-        <button type="submit">Submit</button>
-      
-    </form>
-  </body>
-    </html>
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+
+        <title>Webpage 1</title>
+
+        <link
+            rel="stylesheet"
+            href="style.css"
+        />
+        <link
+            rel="icon"
+            type="image/jpeg"
+            href="kim.jpg"
+        />
+    </head>
+
+    <body>
+        <h1>Test Page</h1>
+        <iframe
+            src="https://www.wikipedia.org"
+            width="300"
+            height="300"
+            title="Wikipedia"
+        >
+        </iframe>
+        <p>Zindagi ka safar</p>
+
+        <audio controls>
+            <source
+                src="audio.mp3"
+                type="audio/mpeg"
+            />
+            Your browser does not support the audio element.
+        </audio>
+
+        <p>Hello World!</p>
+
+        <form
+            action="/login"
+            method="post"
+        >
+            <label for="username">Username:</label>
+            <input
+                type="text"
+                id="username"
+                name="username"
+                placeholder="Enter Username"
+                required
+            />
+            <br /><br />
+
+            <label for="password">Password:</label>
+            <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Enter Password"
+                required
+            />
+            <br /><br />
+
+            <label for="date-of-birth">DOB:</label>
+            <input
+                type="date"
+                id="date-of-birth"
+                name="date-of-birth"
+                required
+            />
+            <br /><br />
+
+            <button type="submit">Submit</button>
+        </form>
+    </body>
+</html>

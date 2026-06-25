@@ -1,7 +1,16 @@
-body{
-  background-color: goldenrod
+:root {
+	--color-primary: #f9d515;
+	--color-secondary: #868686;
+	--color-accent: #069a06;
+	--color-background: #444444;
+	--color-highlight: #e0987a;
+	--color-surface: #b9c1bf;
+}
+
+body {
+	background-color: var(--color-highlight);
 }
 
 h1 {
-  color: whitesmoke
+	color: var(--color-accent);
 }
